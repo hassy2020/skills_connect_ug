@@ -1,0 +1,252 @@
+<!--this tells the browser, that we're using html 5-->
+<!DOCTYPE html>
+
+<!--this deals with the language-->
+<html lang="en">
+
+
+<!--this is the head section, it covers the instructions to the search engine 
+on how to render our content, most of the content here are not seen or shown but contains 
+instructions that appears back at the end-->
+
+<head>
+
+    <!--this ensures that non english letters & emojies are displayed correctly in the browser-->
+    <meta charset="UTF-8">
+
+    <!--this ensures that our content is displayed correctly on the mobile browser, making it responsive,
+Without it → your mobile layout will look zoomed out and broken.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--This tag provides a short summary of your webpage.
+Search engines like Google often display this text as
+ the snippet under your page title in search results.-->
+    <meta name="description"
+        content="Skills Connect UG — Find trusted skilled and semi-skilled workers in Uganda or register to offer your services.">
+
+    <!--lists important terms related to the website, also helping in SEO context -->
+    <meta name="keywords" content="skilled workers Uganda, hire workers Uganda, services Uganda">
+
+
+    <!--This is the main thing Google shows.
+More important than meta description, it appears in the search results-->
+    <title>Skills Connect UG</title>
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!--this is the body section, it covers content 
+that the user is going to see in the browser-->
+
+<body>
+
+    <!-- GLOBAL NAVIGATION BAR (VISIBLE ON ALL PAGES) -->
+    <header>
+        <nav class="global-nav">
+
+            <!-- Logo / Home link left side-->
+            <a href="index.html" class="Logo">
+                <!--span used to style parts of the logo differently-->
+                <span class="connect">Skills Connect</span>
+                <span class="ug">UG</span>
+            </a>
+
+            <!--navigation links rigt side-->
+            <ul class="nav-links">
+
+                <!--each li item represents a navigation option-->
+                <li>
+                    <a href="#" class="service">Find a Service</a>
+                </li>
+
+                <li>
+                    <a href="#" class="service">Offer a Service</a>
+                </li>
+
+                <li>
+                    <a href="about.html" class="service">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html" class="service">Contact</a>
+                </li>
+
+                <li>
+                    <a href="login.html" class="service">Login</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ============================ -->
+    <!-- HERO SECTION -->
+    <!-- ============================ -->
+    <section class="hero">
+        <!-- Background slides (NEW) -->
+        <div class="slides">
+            <div class="slide" style="background-image: url('img/hero/hero1.jpg');"></div>
+            <div class="slide" style="background-image: url('img/hero/hero2.jpg');"></div>
+            <div class="slide" style="background-image: url('img/hero/hero3.jpg');"></div>
+        </div>
+
+        <!-- Hero text content (UNCHANGED) -->
+        <div class="hero-text">
+            <h1>Connect with Skilled & Semi-Skilled Workers in Uganda</h1>
+            <p>Quick, trusted, and easy-to-use platform for finding services or offering your skills.</p>
+
+            <div class="hero-buttons">
+                <a href="#" class="btn">Offer a Service</a>
+                <a href="#" class="btn">Find a Service</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================ -->
+    <!-- STATISTICS / TRUST SECTION -->
+    <!-- ============================ -->
+    <section class="stats">
+        <div class="stat">
+            <span class="stat-icon" aria-hidden="true">👷</span>
+            <h3>150+</h3>
+            <p class="label">Providers</p>
+        </div>
+        <div class="stat">
+            <span class="stat-icon" aria-hidden="true">🤝</span>
+            <h3>500+</h3>
+            <p class="label">Clients Served</p>
+        </div>
+        <div class="stat">
+            <span class="stat-icon" aria-hidden="true">📍</span>
+            <h3>20</h3>
+            <p class="label">Districts Covered</p>
+        </div>
+        <div class="stat">
+            <span class="stat-icon" aria-hidden="true">⭐</span>
+            <h3>4.8/5</h3>
+            <p class="label">Average Rating</p>
+        </div>
+    </section>
+
+    <section class="roles" aria-label="Choose your role">
+        <h2>What Brings You Here?</h2>
+        <p class="section-subheading">Whether you need help or you have skills to offer, we've got you covered.</p>
+
+        <div class="role-cards">
+
+            <!-- ── Card 1: Find a Service ───────────────────── -->
+            <article class="role-card" aria-label="Find a service">
+                <!--
+                                IMAGE PLACEHOLDER:
+                                Save to: img/roles/find-service.jpg
+                                Suggested photo: A client looking at a phone, or someone greeting a worker at their door.
+                                Recommended size: 400×300px, JPEG
+                            -->
+                <div class="role-card-img-wrap">
+                    <img src="img/roles/find-service.jpg" alt="A client using their phone to find a service provider"
+                        width="400" height="250" loading="lazy">
+                    <!-- loading="lazy" defers off-screen image loading — saves data -->
+                </div>
+                <div class="role-card-body">
+                    <!-- ICON PLACEHOLDER: e.g. magnifying glass icon (search.svg) -->
+                    <span class="role-icon" aria-hidden="true">🔍</span>
+                    <h3>Find a Service</h3>
+                    <p>Search for local workers quickly and safely. Browse by category, filter by rating, and
+                        contact them directly on WhatsApp.</p>
+                    <a href="find-service.html" class="btn-card">Browse Services →</a>
+                </div>
+            </article>
+
+            <!-- ── Card 2: Offer a Service ──────────────────── -->
+            <article class="role-card" aria-label="Offer a service">
+                <!--
+                                IMAGE PLACEHOLDER:
+                                Save to: img/roles/offer-service.jpg
+                                Suggested photo: A worker with tools or in uniform, looking confident.
+                                Recommended size: 400×300px, JPEG
+                            -->
+                <div class="role-card-img-wrap">
+                    <img src="img/roles/offer-service.jpg" alt="A skilled worker ready to offer their services"
+                        width="400" height="250" loading="lazy">
+                </div>
+                <div class="role-card-body">
+                    <!-- ICON PLACEHOLDER: e.g. briefcase or tools icon (tools.svg) -->
+                    <span class="role-icon" aria-hidden="true">🛠️</span>
+                    <h3>Offer a Service</h3>
+                    <p>Create your free profile in 4 simple steps. Get found by clients in your area and grow your
+                        customer base.</p>
+                    <a href="offer-service.html" class="btn-card">Get Started →</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- ======================================================== -->
+    <!-- HOW IT WORKS SECTION                                     -->
+    <!-- Three-step visual guide. Helps first-time visitors       -->
+    <!-- understand the platform without reading long paragraphs. -->
+    <!-- Source: Section 2.1 of coursework doc, "How It Works"    -->
+    <!-- ======================================================== -->
+    <section class="how-it-works" aria-label="How Skills Connect UG works">
+        <h2>How It Works</h2>
+        <p class="section-subheading">Three steps. No confusion. No long waiting.</p>
+
+        <ol class="steps-list" role="list">
+
+            <!-- Step 1 -->
+            <li class="step">
+                <!-- ICON PLACEHOLDER: e.g. hand pointing at two options (choice.svg) -->
+                <span class="step-number" aria-hidden="true">1</span>
+                <div class="step-content">
+                    <h3>Choose Your Role</h3>
+                    <p>Tell us whether you're looking to hire someone or you want to be found as a skilled worker.
+                    </p>
+                </div>
+            </li>
+
+            <!-- Step 2 -->
+            <li class="step">
+                <!-- ICON PLACEHOLDER: e.g. browsing/profile icon (profile.svg) -->
+                <span class="step-number" aria-hidden="true">2</span>
+                <div class="step-content">
+                    <h3>Browse or Build a Profile</h3>
+                    <p>Clients browse providers by category and location. Workers fill a quick 4-step registration
+                        form.</p>
+                </div>
+            </li>
+
+            <!-- Step 3 -->
+            <li class="step">
+                <!-- ICON PLACEHOLDER: e.g. WhatsApp logo or phone icon (whatsapp.svg) -->
+                <span class="step-number" aria-hidden="true">3</span>
+                <div class="step-content">
+                    <h3>Connect via WhatsApp or Call</h3>
+                    <p>No complicated messaging system. Tap a button and start chatting directly on WhatsApp.</p>
+                </div>
+            </li>
+
+        </ol>
+    </section>
+
+
+    <!-- ============================ -->
+    <!-- FOOTER -->
+    <!-- ============================ -->
+    <footer>
+        <p>&copy; 2026 Skills Connect UG, Group F | All Rights Reserved</p>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="find-service.html">Find a Service</a></li>
+            <li><a href="offer-service.html">Offer a Service</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
