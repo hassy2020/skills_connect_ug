@@ -1,5 +1,6 @@
+/* ==================================== */
 /* GLOBAL STYLES */
-
+/* ==================================== */
 
 * {
     margin: 0;
@@ -11,11 +12,11 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f9f9f9;
-    padding-top: 70px;
 }
 
-/*  navigation section */
-
+/* ==================================== */
+/* NAVIGATION */
+/* ==================================== */
 
 .global-nav {
     /* makes nav a flex container, puts logo & menu on one line */
@@ -81,25 +82,58 @@ body {
     border-radius: 10px;
 }
 
+.ug {
+    color: rgb(83, 15, 209);
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #34495e;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    min-width: 150px;
+    z-index: 10;
+}
+
+.dropdown-menu li a {
+    padding: 0.5rem;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Mobile menu toggle */
+.mobile-menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* ==================================== */
 /* HERO SECTION */
+/* ==================================== */
+
+/* ==================================== */
+/* HERO SECTION */
+/* ==================================== */
 
 .hero {
     position: relative;
     height: 100vh;
     /* Full screen */
+    overflow: hidden;
     color: #fff;
-    z-index: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-/* Slides container*/
+/* Slides container */
 .slides {
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 0;
 }
 
 /* Each slide */
@@ -113,7 +147,7 @@ body {
     animation: fade 12s infinite;
 }
 
-/*Delay for each image*/
+/* Delay for each image */
 .slide:nth-child(1) {
     animation-delay: 0s;
 }
@@ -149,10 +183,7 @@ body {
     }
 }
 
-/* Dark overlay for readability, where by it adds a darkened 
-layer onto the images to make them readable */
-
-/* this is a psuedo-element */
+/* Dark overlay for readability */
 .hero::after {
     content: "";
     position: absolute;
@@ -161,201 +192,93 @@ layer onto the images to make them readable */
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
 }
 
 /* Hero text */
 .hero-text {
     position: relative;
     z-index: 2;
+    /* Above slides + overlay */
+    top: 50%;
+    transform: translateY(-50%);
     text-align: center;
-
+    padding: 0 1rem;
 }
 
-.btn {
-    background: rgb(55, 79, 146);
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 10px;
-    gap: 20px;
-    width: auto;
-    height: auto;
-    margin: 15px;
-    display: inline-block;
-    font-weight: 700;
-    text-align: center;
-    /*  transition: all 0.3s ease; */
-}
-
-
+/* ==================================== */
 /* ROLE CARDS SECTION */
+/* ==================================== */
 
 .roles {
-    padding: 60px 20px;
+    padding: 2rem 1rem;
     text-align: center;
-
-}
-
-.roles h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
 }
 
 .role-cards {
     display: flex;
-    gap: 20px;
+    gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .role-card {
     background: #fff;
-    border-radius: 15px;
-    padding: 25px;
+    border-radius: 10px;
+    padding: 1rem;
     width: 250px;
-    border: 1px solid #eee;
-    text-align: left;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* gives the card a floating effect */
-
-.role-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.section-subheading {
-    color: #666;
-    max-width: 600px;
-    margin: 0 auto 40px;
-}
-
-.role-card-body h3 {
-    margin: 10px 0;
-    font-size: 20px;
-}
-
-.role-card-body p {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-.role-icon {
-    font-size: 30px;
-    display: inline-block;
-    border-radius: 10px;
-    padding: 10px;
-    background: rgba(55, 79, 146, 0.1);
-}
-
-.btn-card {
-    display: inline-block;
-    background: rgb(55, 79, 146);
-    color: white;
-    padding: 10px 15px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 14px;
-    transition: background 0.3s;
-}
-
-.btn-card:hover {
-    background: rgb(41, 60, 120);
-}
-
-/* how it works section */
-.how-it-works {
-    padding: 60px 20px;
-    text-align: center;
-    /*creates breathing space & makes content centered */
-}
-
-.steps-list {
-
-    gap: 20px;
-    flex-wrap: wrap;
-    display: flex;
-}
-
-.step {
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    margin-bottom: 25px;
-    text-align: left;
-    padding: 15px;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    flex: 1 1 250px;
-}
-
-.step:hover {
-    background: #f5f7ff;
-}
-
-.step-number {
-    background: rgb(55, 79, 146);
-    color: white;
-    min-width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-}
-
-.step-content h3 {
-    margin: 0;
-    font-size: 18px;
-}
-
-.step-content p {
-    margin-top: 5px;
-    color: #555;
-    font-size: 14px;
-}
-
+/* ==================================== */
 /* STATISTICS SECTION */
+/* ==================================== */
 
 .stats {
     display: flex;
     justify-content: space-around;
     padding: 2rem 1rem;
-    background: rgb(55, 79, 146);
+    background: #ecf0f1;
     text-align: center;
-    border-radius: 17px;
 }
 
 .stats .stat h3 {
     font-size: 2rem;
-    color: white;
+    color: #27ae60;
 }
 
 .stats .stat p {
     font-size: 1rem;
-    color: white;
 }
 
-.stat-icon {
-    font-weight: 700;
-    font-size: 1.75rem;
-    display: block;
-}
-
-.label {
-    font-weight: 500;
-    margin-bottom: 0;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-
+/* ==================================== */
 /* FOOTER */
+/* ==================================== */
 
+
+/* ==================================== */
+/* RESPONSIVE / MOBILE FIRST */
+/* ==================================== */
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #34495e;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        width: 200px;
+    }
+
+    .nav-links li {
+        text-align: center;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        color: #fff;
+    }
+}
 
 footer {
     background-color: #f9f9f9;
@@ -391,8 +314,4 @@ footer {
 
 .footer-links a:hover {
     text-decoration: underline;
-}
-
-.ug {
-    color: rgb(83, 15, 209);
 }

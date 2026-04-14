@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>About skill connect <b style="color: purple;">UG</b></title>
+    <style>
+        /* ==================================== */
+        /* NAVIGATION */
+        /* ==================================== */
+
+        /* .global-nav {
+            display: flex;
+            justify-content: space-between;
+            border-radius: 20px;
+            align-items: center;
+            background-color: white;
+            padding: 0.5rem 1rem;
+            position: relative;
+        }
+
+        /*.global-nav .logo {
+            color: #fff;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+      /*  .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        } */
+
+        /*.nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem;
+            display: block;
+        }
+
+        /* Dropdown Menu */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background: rgb(55, 79, 146);
+            top: 100%;
+            left: 0;
+            list-style: none;
+            min-width: 150px;
+            z-index: 10;
+        }
+
+        .dropdown-menu li a {
+            padding: 0.5rem;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        */
+
+        /* Mobile menu toggle */
+        .mobile-menu-icon {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #b1 {
+            float: right;
+        }
+
+        button {
+            border-color: blue;
+            border-radius: 20px;
+            background-color: rgb(55, 79, 146);
+            cursor: pointer;
+            color: white;
+        }
+
+        button: :hover {
+            col
+        }
+
+        /* ==================================== */
+        /* FOOTER */
+        /* ==================================== */
+
+        /* footer {
+            background-color: #2c3e50;
+            border-radius: 20px;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        footer .footer-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        } */
+
+        /* ==================================== */
+        /* RESPONSIVE / MOBILE FIRST */
+        /* ==================================== */
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: rgb(55, 79, 146);
+                position: absolute;
+                right: 0;
+                top: 100%;
+                width: 200px;
+            }
+
+            .nav-links li {
+                text-align: center;
+            }
+
+            .mobile-menu-icon {
+                display: block;
+                color: #fff;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ====================================== -->
+    <!-- GLOBAL NAVIGATION BAR (VISIBLE ON ALL PAGES) -->
+    <!-- ====================================== -->
+    <header>
+        <nav class="global-nav">
+
+            <!-- Logo / Home link left side-->
+            <a href="index.html" class="Logo">
+                <!--span used to style parts of the logo differently-->
+                <span class="connect">Skills Connect</span>
+                <span class="ug">UG</span>
+            </a>
+
+            <!--navigation links rigt side-->
+            <ul class="nav-links">
+
+                <!--each li item represents a navigation option-->
+                <li>
+                    <a href="find.html" class="service" link>Find a Service</a>
+                </li>
+
+                <li>
+                    <a href="offer.html" class="service">Offer a Service</a>
+                </li>
+
+                <li>
+                    <a href="about.html" class="service">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html" class="service">Contact</a>
+                </li>
+
+                <li>
+                    <a href="login.html" class="service">Login</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- Mobile menu icon -->
+        <div class="mobile-menu-icon">
+            <span>&#9776;</span>
+        </div>
+        </nav>
+    </header>
+    <main style="border-style: groove;border-radius: 20px;background-color: rgba(237, 241, 240, 0.863);">
+        <header style="color: darkblue;"> <br><br>
+        </header><br><br>
+        <section
+            style="border-style:solid;color:white; text-align:center;color:white;background-color: #34495e;border-radius: 20px;">
+            <p style="font-size: 50px;">Connecting Uganda's <br>
+                Workforce
+
+            </p>
+            <p style="font-size: 20px;">Built for Ugandans by Ugandans. Bridging the gap between skilled<br>
+                Workers and those who need them
+            </p>
+        </section><br><br>
+        <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+        <!--Flexbox-->
+        <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+        <section>
+            <div class="container">
+                <div class="trust"
+                    style="border-style: solid;border-radius: 10px;background-color:lightblue;border-color:skyblue;">
+                    <img src="trust.jpg" width="270" height="270" alt="trust logo"><br>
+                    <p style="text-align: center;"><b>TRUST</b></p><br>
+                    ID-verified providers you can rely on
+                </div>
+                <div class="local"
+                    style="border-style: solid;border-radius: 20px;background-color:lightblue;border-color:skyblue;">
+                    <img src="local.jpg" width="270" height="270" alt="local logo"><br>
+                    <p style="text-align: center;"><b>LOCAL</b></p><br>
+                    Covering 18 Districts across Uganda
+                </div>
+            </div><br><br><br>
+            <div class="container">
+                <div class="free"
+                    style="border-style: solid;border-radius: 10px;background-color:lightblue;border-color:skyblue;">
+                    <img src="free.jpg" width="270" height="270" alt="free logo"><br>
+                    <p style="text-align: center;"><b>FREE</b></p><br>
+                    No Fees, No middle-men and less hastle
+                </div>
+                <div class="fast"
+                    style="border-style: solid;border-radius: 10px;background-color:lightblue;border-color:skyblue;">
+                    <img src="fast.jpg" width="270" height="270" alt="fast logo"><br>
+                    <p style="text-align: center;"><b>FAST</b></p><br>
+                    Direct Contact via Whatsap or via call
+                </div>
+            </div>
+        </section><br><br>
+
+        <p>
+        <h3>Our Mission</h3>
+        <p style="font-size: 20px;">We believe every skilled and semi-skilled Ugandan deserves a chance to be tested</p>
+        </p>
+        <p style="text-align: center; color: blue;font-size: 50px;">
+            <img src="img/About/about.png" width="40" height="40" alt="about icon"> About Us
+        </p>
+
+        <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+        <!--FOOTER-->
+        <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+        <!-- ============================ -->
+        <!-- FOOTER -->
+        <!-- ============================ -->
+        <footer>
+            <p>&copy; 2026 Skills Connect UG, Group F | All Rights Reserved</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="find.html">Find a Service</a></li>
+                <li><a href="offer.html">Offer a Service</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </footer>
+
+    </main>
+</body>
+
+</html>

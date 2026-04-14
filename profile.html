@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Skills Connect UG</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: white;
+            margin: 0;
+        }
+
+        /* Top Bar */
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 30px;
+            background: white;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .login {
+            background: rgb(55, 79, 146);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: none;
+        }
+
+        /* Profile Header */
+        .profile-header {
+            background: linear-gradient(rgb(55, 79, 146), rgb(41, 60, 120));
+            color: white;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .avatar {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 5px solid lightblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            margin-right: 20px;
+        }
+
+        /* Verified */
+        .badge {
+            background: green;
+            padding: 5px 10px;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+
+        /* Main Section */
+        .container {
+            display: flex;
+            padding: 30px;
+        }
+
+        .left {
+            width: 60%;
+        }
+
+        .right {
+            width: 40%;
+            padding-left: 30px;
+        }
+
+        /* Skills */
+        .skill {
+            border: 1px solid gray;
+            padding: 8px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        /* Reviews */
+        .review {
+            border-bottom: 1px solid gray;
+            padding: 10px 0;
+        }
+
+        /* Contact Box */
+        .contact {
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            border: 2px solid gray;
+        }
+
+        .whatsapp {
+            background: lightgreen;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .call {
+            background: rgb(55, 79, 146);
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        .available {
+            color: green;
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .footer .links {
+            margin-top: 10px;
+        }
+
+        .footer .links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer .links ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .footer .links ul li a {
+            text-decoration: none;
+            color: rgb(55, 79, 146);
+        }
+
+        .footer .links ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!--navbar-->
+    <header>
+        <nav class="global-nav">
+
+            <!-- Logo / Home link left side-->
+            <a href="index.html" class="Logo">
+                <!--span used to style parts of the logo differently-->
+                <span class="connect">Skills Connect</span>
+                <span class="ug">UG</span>
+            </a>
+
+            <!--navigation links rigt side-->
+            <ul class="nav-links">
+
+                <!--each li item represents a navigation option-->
+                <li>
+                    <a href="find.html" class="service" link>Find a Service</a>
+                </li>
+
+                <li>
+                    <a href="offer.html" class="service">Offer a Service</a>
+                </li>
+
+                <li>
+                    <a href="about.html" class="service">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html" class="service">Contact</a>
+                </li>
+
+                <li>
+                    <a href="login.html" class="service">Login</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Profile Header -->
+    <div class="profile-header">
+
+        <div class="avatar">MR</div>
+
+        <div>
+            <h1>Muyomba Rodney</h1>
+            <p> Plumber & Home Repairs • Makindye, Kampala</p>
+
+            <span class="badge"> Verified</span>
+            <span> 4.9 · 32 reviews</span>
+        </div>
+
+    </div>
+
+    <!-- Main -->
+    <div class="container">
+
+        <!-- Left -->
+        <div class="left">
+
+            <h2>Skills</h2>
+
+            <div class="skill">Pipe fitting</div>
+            <div class="skill">Leak repair</div>
+            <div class="skill">Drain clearing</div>
+            <div class="skill">Bathroom install</div>
+
+            <h2>Reviews</h2>
+
+            <div class="review">
+                <b>Abia A.</b>
+                <p>Fixed our leaking pipe in 30 minutes. Very professional!</p>
+            </div>
+
+            <div class="review">
+                <b>Pius M.</b>
+                <p>Excellent work. Will definitely hire again.</p>
+            </div>
+
+        </div>
+
+        <!-- Right -->
+        <div class="right">
+
+            <div class="contact">
+
+                <h2>Contact Muyomba Rodney</h2>
+
+                <button class="whatsapp"> WhatsApp</button>
+
+                <button class="call"> Call</button>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!--Footer -->
+    <footer>
+        <p>&copy; 2026 Skills Connect UG, Group F | All Rights Reserved</p>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="find.html">Find a Service</a></li>
+            <li><a href="offer.html">Offer a Service</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,380 @@
+:root {
+    --primary-blue: #1e3a8a;
+    --light-blue: #f0f4ff;
+    --border-color: #d1d5db;
+    --text-main: #374151;
+    --text-muted: #6b7280;
+    --accent-blue: #3b82f6;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+
+    justify-content: center;
+    align-items: flex-start;
+    /* Better for long forms on mobile */
+    min-height: 100vh;
+    color: var(--text-main);
+}
+
+/* Container: Responsive Widths */
+.container {
+    width: 100%;
+    max-width: 900px;
+    /* Wider for desktop readability */
+    background: white;
+    margin: 0 auto;
+    /* Full width on mobile */
+    min-height: 100vh;
+    /* Full height on mobile */
+
+
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo-text {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--primary-blue);
+}
+
+.logo-accent {
+    color: var(--accent-blue);
+}
+
+.login-button {
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 6px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.login-button:hover {
+    opacity: 0.9;
+}
+
+/* Banner */
+.banner {
+    background: linear-gradient(to bottom, #1e3a8a, #2563eb);
+    color: white;
+    padding: 30px 20px;
+    text-align: left;
+}
+
+.offer-a-service-title {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.subtitle {
+    margin: 5px 0 0;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Stepper */
+.stepper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    /* Equal spacing */
+}
+
+.step-circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.step.active .step-circle {
+    background: var(--primary-blue);
+    color: white;
+}
+
+.step.completed .step-circle {
+    background: var(--accent-blue);
+    color: white;
+}
+
+.step-label {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    text-align: center;
+    white-space: nowrap;
+}
+
+.step-line {
+    flex-grow: 1;
+    height: 2px;
+    background: #e5e7eb;
+    margin-top: -20px;
+    /* Align with circles */
+}
+
+/* Form Section */
+.skills-form {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.input-field,
+.textarea-field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #fafafa;
+    font-size: 1rem;
+}
+
+/* Skill Tags */
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tag {
+    background: white;
+    border: 1px solid var(--border-color);
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: all 0.2s;
+}
+
+.skill-tag.selected {
+    border-color: var(--accent-blue);
+    color: var(--accent-blue);
+    background: var(--light-blue);
+    border-width: 2px;
+}
+
+/* Navigation Buttons */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+.back-button {
+    background: #f3f4f6;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.continue-button {
+    background: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Footer Section */
+.footer-visual {
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: #f9fafb;
+}
+
+.footer-text {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+/* --- RESPONSIVE ADJUSTMENTS --- */
+
+/* Tablet & Desktop (Screens wider than 600px) */
+@media (min-width: 601px) {
+    body {
+        padding: 40px 20px;
+    }
+
+    .container {
+        border-radius: 20px;
+        min-height: auto;
+        /* Don't force full height on desktop */
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-label {
+        font-size: 0.85rem;
+    }
+
+    .skills-form {
+        padding: 40px;
+    }
+}
+
+/* Small Mobile (Screens narrower than 380px) */
+@media (max-width: 380px) {
+    .step-label {
+        display: none;
+        /* Hide labels on very small screens to prevent overlap */
+    }
+
+    .offer-a-service-title {
+        font-size: 1.4rem;
+    }
+}
+
+.global-nav {
+    /* makes nav a flex container, puts logo & menu on one line */
+    display: flex;
+
+    /* Pushes logo left & nav-links right */
+    justify-content: space-between;
+
+    /* Aligns everything vertically */
+    align-items: center;
+    padding: 1rem;
+
+
+    position: fixed;
+
+    /* it tells the where sticking begins from */
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    /* this keeps the sticked part above other elemnts */
+    z-index: 9999;
+
+    /* prevents content showing through */
+    background: white;
+    border-radius: 17px;
+}
+
+.nav-links {
+    /* removes bullet points */
+    list-style: none;
+
+    /* makes items sit in a row */
+    display: flex;
+
+    /* adds space in between items */
+    gap: 10px;
+}
+
+/* logo styling */
+.Logo {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* style skills connect part */
+.connect {
+    color: rgb(2, 2, 37);
+}
+
+/* style ug part differently */
+.ug {
+    color: rgb(132, 100, 206);
+}
+
+/* style the links like a button */
+.service {
+    padding: 0.5rem 1rem;
+    background: rgb(55, 79, 146);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.ug {
+    color: rgb(83, 15, 209);
+}
+
+/* FOOTER */
+
+
+footer {
+    background-color: #f9f9f9;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: rgb(55, 79, 146);
+}
+
+.Connect {
+    color: rgb(2, 34, 34);
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}

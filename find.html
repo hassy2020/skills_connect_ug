@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="finds.css">
+    <title>Skills Connect UG</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: white;
+        }
+
+        .container {
+            max-width: 9999px;
+            margin-top: 170px;
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .login {
+            background: rgb(55, 79, 146);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 10px;
+        }
+
+        /* Banner */
+        .banner {
+            background: linear-gradient(rgb(55, 79, 146), rgb(41, 60, 120));
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        /* Categories */
+        .categories {
+            margin-top: 20px;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+
+        .category {
+            border: 2px solid grey;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .category-grid .category:hover {
+            background: rgb(55, 79, 146);
+            color: white;
+            border-color: rgb(55, 79, 146);
+        }
+
+        /* Search */
+        .search {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .search input {
+            flex: 1;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid grey;
+        }
+
+        .apply {
+            background: rgb(55, 79, 146);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        .apply:hover {
+            background: rgb(41, 60, 120);
+        }
+
+        /* provider cards */
+        .service {
+            border: 1px solid grey;
+            border-radius: 15px;
+            padding: 15px;
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .initial {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 3px rgb(55, 79, 146) solid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .info {
+            flex: 1;
+            margin-left: 15px;
+        }
+
+        .buttons button {
+            margin-left: 10px;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 8px;
+        }
+
+        .wa {
+            background: green;
+            color: white;
+        }
+
+        .wa:hover {
+            background: darkgreen;
+        }
+
+        .view {
+            background: rgb(55, 79, 146);
+            color: white;
+        }
+
+        .view:hover {
+            background: rgb(41, 60, 120);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        .footer .links {
+            margin-top: 10px;
+        }
+
+        .footer .links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer .links ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .footer .links ul li a {
+            text-decoration: none;
+            color: rgb(55, 79, 146);
+        }
+
+        .footer .links ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- GLOBAL NAVIGATION BAR (VISIBLE ON ALL PAGES) -->
+    <header>
+        <nav class="global-nav">
+
+            <!-- Logo / Home link left side-->
+            <a href="index.html" class="Logo">
+                <!--span used to style parts of the logo differently-->
+                <span class="connect">Skills Connect</span>
+                <span class="ug">UG</span>
+            </a>
+
+            <!--navigation links rigt side-->
+            <ul class="nav-links">
+
+                <!--each li item represents a navigation option-->
+                <li>
+                    <a href="find.html" class="service" link>Find a Service</a>
+                </li>
+
+                <li>
+                    <a href="offer.html" class="service">Offer a Service</a>
+                </li>
+
+                <li>
+                    <a href="about.html" class="service">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html" class="service">Contact</a>
+                </li>
+
+                <li>
+                    <a href="login.html" class="service">Login</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- Banner -->
+        <div class="banner">
+            <h1>Find a Service</h1>
+            <p>Browse trusted, verified providers near you</p>
+        </div>
+
+        <!-- Categories -->
+        <div class="categories">
+            <h2>Browse by Category</h2>
+
+            <div class="category-grid">
+                <div class="category"> All</div>
+                <div class="category"> Repairs</div>
+                <div class="category"> Cleaning</div>
+                <div class="category"> Salon</div>
+                <div class="category"> Tutoring</div>
+                <div class="category"> Delivery</div>
+                <div class="category"> Catering</div>
+                <div class="category"> Electric</div>
+                <div class="category"> Garden</div>
+                <div class="category"> Tech</div>
+            </div>
+        </div>
+
+        <!-- Search -->
+        <div class="search">
+            <input type="text" placeholder="Search service">
+            <input type="text" placeholder="Location">
+            <button class="apply">Apply</button>
+        </div>
+
+        <!-- provider list -->
+        <div class="service">
+            <div class="initial">MR</div>
+
+            <div class="info">
+                <b>Muyomba Rodney</b><br>
+                Plumbing • Makindye • 4.9
+            </div>
+
+            <div class="buttons">
+                <button class="wa">WA</button>
+                <a href="profile.html">
+                    <button class="view">View</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="initial">OI</div>
+
+            <div class="info">
+                <b>Okoboi Ivan</b><br>
+                Cleaning • Ntinda • 4.8
+            </div>
+
+            <div class="buttons">
+                <button class="wa">WA</button>
+                <a href="profile.html">
+                    <button class="view">View</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="initial">NP</div>
+
+            <div class="info">
+                <b>Namudde Pricilla</b><br>
+                Tutoring • Kireka • 4.7
+            </div>
+
+            <div class="buttons">
+                <button class="wa">WA</button>
+                <a href="profile.html">
+                    <button class="view">View</button>
+                </a>
+            </div>
+        </div>
+        <!--Footer -->
+        <footer>
+            <p>&copy; 2026 Skills Connect UG, Group F | All Rights Reserved</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="find.html">Find a Service</a></li>
+                <li><a href="offer.html">Offer a Service</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </footer>
+
+</body>
+
+</html>
