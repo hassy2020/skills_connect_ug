@@ -22,7 +22,7 @@ body {
 /* Container: Responsive Widths */
 .container {
     width: 100%;
-    max-width: 900px;
+    max-width: 9999px;
     /* Wider for desktop readability */
     background: white;
     margin: 0 auto;
